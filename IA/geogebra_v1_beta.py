@@ -1,21 +1,8 @@
-import getpass
-import os
-import bs4
-from langchain import hub
-from langchain_community.document_loaders import WebBaseLoader
 from langchain_chroma import Chroma
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.llms import Ollama
-from langchain_community.embeddings import LlamaCppEmbeddings
 from torch import cuda
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain_community.document_loaders import TextLoader
-from sentence_transformers import SentenceTransformer
-
-
-#llm = Ollama(model="llama2")
 
 embed_model_id = "dangvantuan/sentence-camembert-large"
 
